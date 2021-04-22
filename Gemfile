@@ -14,6 +14,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bulma-rails', '~> 0.7.4'
 gem 'bulma-extensions-rails', '~> 1.0.30'
 gem 'devise'
+gem 'omniauth', '= 1.9.0'
+gem 'omniauth-facebook', '= 5.0.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do

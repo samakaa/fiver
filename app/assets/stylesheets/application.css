@@ -15,6 +15,8 @@
  */
  @import 'bulma';
  @import 'bulma-extensions';
+ @import 'noty/lib/noty';
+ @import 'noty/lib/themes/sunset';
  #header-video {
     position: absolute;
     top: 50%;
