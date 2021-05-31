@@ -52,7 +52,8 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-
+  ENV['FACEBOOK_ID']="378031840017774"
+  ENV['FACEBOOK_SECRET_KEY']="33387a823f816c5e899ec9fe070e9de2"
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 

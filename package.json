@@ -3,11 +3,15 @@
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
+    "@rails/actiontext": "6.0.3-6",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "4.3.0",
+    "bulma-extensions": "^6.2.7",
+    "dropzone": "^5.9.2",
     "jquery": "^3.5.1",
     "noty": "^3.2.0-beta-deprecated",
+    "trix": "1.2.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

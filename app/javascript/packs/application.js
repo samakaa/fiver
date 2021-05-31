@@ -9,6 +9,17 @@ require("@rails/activestorage").start()
 require("channels")
 
 window.Noty = require("noty")
+window.Dropzone = require("dropzone")
+
+window.BulmaCarousel = require("bulma-extensions/bulma-carousel/dist/js/bulma-carousel")
+
+$(document).on('turbolinks:load', () => {
+    $('.toggle').on('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#' + e.target.getAttribute('aria-controls')).toggleClass('is-hidden');
+    })
+})
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -17,3 +28,6 @@ window.Noty = require("noty")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+require("trix")
+require("@rails/actiontext")

@@ -4,20 +4,23 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.6'
 
 gem 'rails', '~> 6.0.0.rc1'
-gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+#gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
+#gem 'jquery-turbolinks'
 gem 'bulma-rails', '~> 0.7.4'
 gem 'bulma-extensions-rails', '~> 1.0.30'
 gem 'devise'
+gem 'koala'
 gem 'omniauth', '= 1.9.0'
 gem 'omniauth-facebook', '= 5.0.0'
+gem 'image_processing', '~> 0.2.3'
 gem 'bootsnap', '>= 1.4.2', require: false
-
+gem 'faker'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
